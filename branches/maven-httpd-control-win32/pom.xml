@@ -24,9 +24,7 @@
         
         httpd webserver plugin.
     </description>
-    
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-httpd-control-win32/</url>
-    
+
     <dependencies>
     	<dependency>
     		<groupId>org.phpmaven</groupId>

@@ -25,16 +25,6 @@
         Packaging and extracting phar archives.
     </description>
     
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-phar/</url>
-    
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-phar/</url>
-        </site>
-    </distributionManagement>
-    
     <dependencies>
         <dependency>
         	<groupId>org.phpmaven</groupId>

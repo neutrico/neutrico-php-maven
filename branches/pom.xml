@@ -3,6 +3,7 @@
     
     <properties>
         <phpmavenTagName>${project.version}</phpmavenTagName>
+        <htmlBottom>&lt;b&gt;Copyright &#169; ${phpmavenForkYear}-${phpmavenCopyrightYear} PHP-Maven.org. All Rights Reserved.&lt;/b&gt;</htmlBottom>
     </properties>
 
     <groupId>org.phpmaven.sites</groupId>
@@ -16,8 +17,6 @@
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
         the default Maven lifecycle to provide multiple php features.
     </description>
-    
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/</url>
 
   <repositories>
 	<repository>

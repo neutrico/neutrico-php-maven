@@ -25,16 +25,6 @@
         Lint check for php files.
     </description>
     
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-validate-lint/</url>
-    
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-validate-lint/</url>
-        </site>
-    </distributionManagement>
-    
     <dependencies>
         <dependency>
         	<groupId>org.phpmaven</groupId>

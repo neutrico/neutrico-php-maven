@@ -36,14 +36,4 @@
         </pluginManagement>
     </build>
 
-<!-- 
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/var/sites-aggregator</url>
-        </site>
-    </distributionManagement>
- -->
-
 </project>

@@ -2,15 +2,10 @@
     <modelVersion>4.0.0</modelVersion>
     
     <properties>
-        <phpmavenTagName>${project.version}</phpmavenTagName>
+        <phpmavenForkYear>2010</phpmavenForkYear>
+        <phpmavenCopyrightYear>2012</phpmavenCopyrightYear>
     </properties>
 
-    <!-- <parent> -->
-    <!--     <groupId>org.phpmaven.build</groupId> -->
-    <!--     <artifactId>java-parent-branches</artifactId> -->
-    <!--     <version>1</version> -->
-    <!--     <relativePath>../../var/java-parent-branches/pom.xml</relativePath> -->
-    <!-- </parent> -->
 
     <groupId>org.phpmaven.build</groupId>
     <artifactId>generic-java-parent</artifactId>
@@ -23,14 +18,7 @@
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
         the default Maven lifecycle to provide multiple php features.
     </description>
-    
-    <!-- <distributionManagement> -->
-    <!--     <site> -->
-    <!--         <id>upload-${phpmavenSitesId}</id> -->
-    <!--         <name>${phpmavenSitesName}</name> -->
-    <!--         <url>${phpmavenSitesUploadUrl}/var/sites-aggregator</url> -->
-    <!--     </site> -->
-    <!-- </distributionManagement> -->
+
     <build>
         <pluginManagement>
             <plugins>
@@ -91,16 +79,6 @@
                        <aggregate>false</aggregate>
                     </configuration>
                 </plugin>
-                <!-- <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-	                <artifactId>maven-remote-resources-plugin</artifactId>
-      	            <executions>
-	                    <execution>
-      	                    <id>include-license</id>
-	                        <phase>generate-resources</phase>
-                        </execution>
-      	            </executions>
-                </plugin> -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-remote-resources-plugin</artifactId>

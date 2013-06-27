@@ -1,9 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
-    <properties>
-        <phpmavenTagName>${project.version}</phpmavenTagName>
-    </properties>
 
     <parent>
         <groupId>org.phpmaven.build</groupId>
@@ -25,15 +21,6 @@
         Generating phpdoc reports.
     </description>
     
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-phpdoc/</url>
-    
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-phpdoc/</url>
-        </site>
-    </distributionManagement>
     
     <dependencies>
         <dependency>

@@ -23,16 +23,6 @@
         the default Maven lifecycle to provide multiple php features.
     </description>
     
-    <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/phpmaven-testtool/</url>
-    
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/${phpmavenTagType}/${phpmavenTagName}/phpmaven-testtool/</url>
-        </site>
-    </distributionManagement>
-    
     <dependencies>
 		<!-- Tests -->        
         <dependency>
