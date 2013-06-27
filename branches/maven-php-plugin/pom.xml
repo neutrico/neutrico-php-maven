@@ -1,10 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     
-    <!-- <properties> -->
-    <!--     <phpmavenTagName>${project.version}</phpmavenTagName> -->
-    <!-- </properties> -->
-
     <parent>
         <groupId>org.phpmaven.build</groupId>
         <artifactId>generic-java-parent</artifactId>
@@ -22,16 +18,6 @@
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
         the default Maven lifecycle to provide multiple php features.
     </description>
-    
-    <!-- <url>${phpmavenRootUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-plugin/</url> -->
-    
-    <!-- <distributionManagement> -->
-    <!--     <site> -->
-    <!--         <id>upload-${phpmavenSitesId}</id> -->
-    <!--         <name>${phpmavenSitesName}</name> -->
-    <!--         <url>${phpmavenSitesUploadUrl}/${phpmavenTagType}/${phpmavenTagName}/maven-php-plugin/</url> -->
-    <!--     </site> -->
-    <!-- </distributionManagement> -->
     
     <dependencies>
     	<!-- maven -->
@@ -179,41 +165,6 @@
   
   <build>
       <plugins>
-      	  <plugin>
-      	      <groupId>org.apache.maven.plugins</groupId>
-      	      <artifactId>maven-site-plugin</artifactId>
-      	      <configuration>
-      	      	<reportPlugins>
-      	      		<plugin>
-      	      			<groupId>org.apache.maven.plugins</groupId>
-      	      			<artifactId>maven-plugin-plugin</artifactId>
-      	      			<version>2.9</version>
-      	      		</plugin>
-                    <plugin>
-                    	<groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-checkstyle-plugin</artifactId>
-                    </plugin>
-              		<plugin>
-                		<groupId>org.codehaus.mojo</groupId>
-                		<artifactId>cobertura-maven-plugin</artifactId>
-                		<version>2.5.1</version>
-		                <configuration>
-        			        <formats>
-        			            <format>xml</format>
-        			            <format>html</format>
-        			        </formats>
-            			</configuration>
-            			<reportSets>
-            				<reportSet>
-            					<reports>
-            						<report>cobertura</report>
-            					</reports>
-            				</reportSet>
-            			</reportSets>
-		            </plugin>
-      	      	</reportPlugins>
-      	      </configuration>
-      	  </plugin>
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-source-plugin</artifactId>
