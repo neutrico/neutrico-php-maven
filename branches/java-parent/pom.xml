@@ -79,29 +79,6 @@
                        <aggregate>false</aggregate>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-remote-resources-plugin</artifactId>
-                    <version>1.2.1</version>
-                    <configuration>
-                        <properties>
-                            <forkYear>${phpmavenForkYear}</forkYear>
-                            <projectYear>${phpmavenCopyrightYear}</projectYear>
-                        </properties>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>include-license</id>
-                            <goals><goal>process</goal></goals>
-                            <phase>generate-resources</phase>
-                            <configuration>
-                                <resourceBundles>
-                                    <resourceBundle>org.phpmaven.build:java-resources:1</resourceBundle>
-                                </resourceBundles>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
                 
       		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
       		<plugin>
