@@ -11,7 +11,7 @@
     <artifactId>aggregator</artifactId>
     <packaging>pom</packaging>
 
-    <name>Neutrico Maven PHP Build aggregator</name>
+    <name>Maven PHP Build aggregator</name>
 
     <description>
         A Maven plugin for dependency management and quality assurance in PHP projects. Uses
@@ -28,22 +28,22 @@
     </modules>
     
     <profiles>
+    	<!-- <profile> -->
+    	<!-- 	<id>maven-php-include-sites</id> -->
+    	<!-- 	<modules> -->
+    	<!-- 		<module>sites</module> -->
+    	<!-- 	</modules> -->
+    	<!-- 	<activation><activeByDefault>true</activeByDefault></activation> -->
+    	<!-- </profile> -->
     	<profile>
-    		<id>neutrico-php-maven-include-sites</id>
-    		<modules>
-    			<module>sites</module>
-    		</modules>
-    		<activation><activeByDefault>true</activeByDefault></activation>
-    	</profile>
-    	<profile>
-    		<id>neutrico-php-maven-include-branches</id>
+    		<id>maven-php-include-branches</id>
     		<modules>
     			<module>branches</module>
     		</modules>
     		<activation><activeByDefault>true</activeByDefault></activation>
     	</profile>
     	<profile>
-    		<id>neutrico-php-maven-include-tags</id>
+    		<id>maven-php-include-tags</id>
     		<modules>
     			<module>tags</module>
     		</modules>
