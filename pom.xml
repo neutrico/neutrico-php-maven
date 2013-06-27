@@ -18,15 +18,6 @@
         the default Maven lifecycle to provide multiple php features.
     </description>
     
-    <modules>
-    	<!-- Not part of the build cycle -->
-    	<!-- REASON: maven-site does currently not allow skins in aggregators -->
-        <!-- <module>var</module> -->
-        <!-- <module>build</module> -->
-        
-        <!-- normal build cycle -->
-    </modules>
-    
     <profiles>
     	<profile>
     		<id>maven-php-include-branches</id>
