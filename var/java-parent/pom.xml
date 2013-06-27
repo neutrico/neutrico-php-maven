@@ -177,7 +177,6 @@
                                 <version>2.8</version>
                                 <configuration>
                                     <aggregate>false</aggregate>
-                                    <header>${google.analytics.header}</header>
                                     <bottom>${htmlBottom}</bottom>
                                 </configuration>
                             </plugin>
@@ -187,7 +186,7 @@
                                 <version>2.3</version>
                                 <configuration>
                                     <aggregate>false</aggregate>
-                                    <bottom>${google.analytics.header} ${htmlBottom}</bottom>
+                                    <bottom>${htmlBottom}</bottom>
                                 </configuration>
                             </plugin>
                             <plugin>
