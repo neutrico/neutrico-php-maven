@@ -8,8 +8,10 @@
     <!--     <relativePath>../site-parent/pom.xml</relativePath> -->
     <!-- </parent> -->
 
+    <groupId>org.phpmaven.build</groupId>
     <artifactId>java-parent</artifactId>
     <packaging>pom</packaging>
+    <version>1</version>
     
     <name>Maven PHP Java parent pom</name>
 
