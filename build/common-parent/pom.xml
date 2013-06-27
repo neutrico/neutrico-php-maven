@@ -8,9 +8,13 @@
         <phpmavenFsRoot>${project.basedir}</phpmavenFsRoot>
 
         <phpmavenNexusRootUrl>http://nexus.php-maven.org</phpmavenNexusRootUrl>
+
         <phpmavenReposReleasesUrl>${phpmavenNexusRootUrl}/index.html#view-repositories;release-repo1.php-maven.org</phpmavenReposReleasesUrl>
+
         <phpmavenReposReleasesUrlAlt>${phpmavenNexusRootUrl}/content/groups/release-repo1.php-maven.org/</phpmavenReposReleasesUrlAlt>
+
         <phpmavenReposReleasesId>releases-php-maven-org</phpmavenReposReleasesId>
+
         <phpmavenReposReleasesName>Official PHP-Maven Releases</phpmavenReposReleasesName>
         <phpmavenReposReleasesUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-releases.php-maven.org/</phpmavenReposReleasesUploadNullUrl>
         <phpmavenReposReleasesUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-releases/</phpmavenReposReleasesUploadPearUrl>
@@ -18,8 +22,11 @@
         <phpmavenReposReleasesUploadPhpUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-php-releases/</phpmavenReposReleasesUploadPhpUrl>
         <phpmavenReposSnapshotsUrl>${phpmavenNexusRootUrl}/index.html#view-repositories;snapshot-repo1.php-maven.org</phpmavenReposSnapshotsUrl>
         <phpmavenReposSnapshotsUrlAlt>${phpmavenNexusRootUrl}/content/groups/snapshot-repo1.php-maven.org/</phpmavenReposSnapshotsUrlAlt>
+
         <phpmavenReposSnapshotsId>snapshots-php-maven-org</phpmavenReposSnapshotsId>
+
         <phpmavenReposSnapshotsName>Official PHP-Maven Snapshots</phpmavenReposSnapshotsName>
+
         <phpmavenReposSnapshotsUploadNullUrl>${phpmavenNexusRootUrl}/content/repositories/null-snapshots.php-maven.org/</phpmavenReposSnapshotsUploadNullUrl>
         <phpmavenReposSnapshotsUploadPearUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-pear-snapshots/</phpmavenReposSnapshotsUploadPearUrl>
         <phpmavenReposSnapshotsUploadPluginUrl>${phpmavenNexusRootUrl}/content/repositories/php-maven-plugin-snapshots/</phpmavenReposSnapshotsUploadPluginUrl>
@@ -34,7 +41,39 @@
         <phpmavenForkYear>2010</phpmavenForkYear>
         <phpmavenCopyrightYear>2012</phpmavenCopyrightYear>
     
-        <google.analytics.accountId>UA-25500668-1</google.analytics.accountId>
+
+
+
+
+
+
+  <repositories>
+	<repository>
+      <id>internal</id>
+      <name>Archiva Managed Internal Repository</name>
+      <url>http://localhost:8090/repository/internal/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>snapshots</id>
+      <name>Archiva Managed Snapshot Repository</name>
+      <url>http://localhost:8090/repository/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+
+        <!-- <google.analytics.accountId>UA-25500668-1</google.analytics.accountId> -->
 <!--         <google.analytics.header>&lt;script type="text/javascript"&gt; -->
 
 <!--   var _gaq = _gaq || []; -->

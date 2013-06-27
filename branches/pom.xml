@@ -21,13 +21,13 @@
     
     <url>${phpmavenRootUrl}/branches/</url>
     
-    <distributionManagement>
-        <site>
-            <id>upload-${phpmavenSitesId}</id>
-            <name>${phpmavenSitesName}</name>
-            <url>${phpmavenSitesUploadUrl}/branches/</url>
-        </site>
-    </distributionManagement>
+    <!-- <distributionManagement> -->
+    <!--     <site> -->
+    <!--         <id>upload-${phpmavenSitesId}</id> -->
+    <!--         <name>${phpmavenSitesName}</name> -->
+    <!--         <url>${phpmavenSitesUploadUrl}/branches/</url> -->
+    <!--     </site> -->
+    <!-- </distributionManagement> -->
     
     <modules>
         <module>2.0-SNAPSHOT</module>
